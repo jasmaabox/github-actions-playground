@@ -6,8 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: main
       - name: Hello Action
         id: hello
         uses: wxdlong/hello-action@v7
