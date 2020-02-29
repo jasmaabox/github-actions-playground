@@ -1,4 +1,4 @@
 FROM python:3.6-alpine
 
-COPY . .
-RUN "python ./entrypoint.py"
+COPY . /app
+CMD ["python", "/app/entrypoint.py"]
