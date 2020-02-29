@@ -12,3 +12,5 @@ jobs:
           who-to-greet: Jason
       - name: Show time
         run: echo "Time is ${{ steps.hello.outputs.time }}"
+      - name: Test action
+        uses: ./.github/actions/test-action

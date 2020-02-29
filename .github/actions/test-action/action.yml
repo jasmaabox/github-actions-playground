@@ -1,0 +1,11 @@
+name: 'Test Action'
+description: 'test action'
+author: 'Jason Maa'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'check-circle'
+  color: 'green'
