@@ -1,3 +1,3 @@
 FROM python:3.6-alpine
 
-RUN python main.py
+RUN python ./github-actions-playground/main.py
