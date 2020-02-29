@@ -5,6 +5,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: wxdlong/hello-action@v7
+      - name: Hello Action
+        id: hello
+        uses: wxdlong/hello-action@v7
         with:
-          who-to-greet: 'Jason'
+          who-to-greet: Jason
+      - name: Show time
+        run: echo "Time is ${{ steps.hello.outputs.time }}"
